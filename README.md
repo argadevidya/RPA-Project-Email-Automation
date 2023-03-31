@@ -1,9 +1,27 @@
 # RPA-Project-Email-Automation
-RPA Project Email Automation
+Filter emails from inbox based on sender's email addresses or email subject and store emails and attachments in seperate folders according to sender.
 
+### Table of Content
+  * [Overview](#overview)
+  * [Motivation](#motivation)
+  * [Steps in the project execution](#steps-in-the-project-execution)
+  * [Technical Aspect](#technical-aspect)
+  * [Installation](#installation)
 
+### Overview 
 
-## Email Automation with RPA Using UiPath
+### Steps in the project execution
+
+1. Create a Sequence and add 'Get IMAP Mail Messages'. Then create email, password and mailMessages variables. Set your email and password for accessing your inbox. Set mailMessages type as List<System.Net.Mail.MailMessage>.
+
+2. Now in Properties, set the Port as 993 and Server as "imap.gmail.com". Also enter email and password into Logon section.
+
+3. Set the count of mails you want to filter in Top property. Uncheck OnlyUnreadMessages option to filter emails from already read mails.
+
+4. Now in sequence, drag ForEach activity and iterate over mailMessages list. Inside foreach, add If activity to check each mail's sender email address using mail.From.Address.Contains(""). If the condition holds true, do whatever task you wish to do. For false condition, also define a task.
+
+### Technical Aspect
+### Email Automation with RPA Using UiPath
 Among numerous activities that UiPath can automate, Email automation is one of the most popular requirements for many employees and organizations across the globe. Using Uipath we can automate sending emails as well as receiving them. In this tutorial, we will explain all the activities and packages that UiPath offers for Email automation.
 
 <img width="300" alt="1" src="https://user-images.githubusercontent.com/122998236/229130999-fde7de28-265c-4db3-9690-005e32f7bc54.png">
