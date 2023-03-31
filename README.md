@@ -1,5 +1,9 @@
 # RPA-Project-Email-Automation
 RPA Project Email Automation
+
+
+
+## Email Automation with RPA Using UiPath
 Among numerous activities that UiPath can automate, Email automation is one of the most popular requirements for many employees and organizations across the globe. Using Uipath we can automate sending emails as well as receiving them. In this tutorial, we will explain all the activities and packages that UiPath offers for Email automation.
 
 <img width="300" alt="1" src="https://user-images.githubusercontent.com/122998236/229130999-fde7de28-265c-4db3-9690-005e32f7bc54.png">
@@ -76,7 +80,8 @@ Suppose a user needs the UiPath Robot to check unread messages and download atta
 <img width="301" alt="15" src="https://user-images.githubusercontent.com/122998236/229134229-72ef8cae-8df2-41a0-ada5-b117b8e92f75.png">
 
 To do this we will again use the same For Each mail loop, but include an If as well as Save Attachments activity as shown in the image.<br>
-Sending Emails
+
+### Sending Emails
 <img width="300" alt="16" src="https://user-images.githubusercontent.com/122998236/229134254-336a48c6-91dd-48b8-ad9f-026b5837796a.png">
 
 
