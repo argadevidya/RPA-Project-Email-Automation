@@ -12,13 +12,14 @@ Filter emails from inbox based on sender's email addresses or email subject and 
 
 ### Steps in the project execution
 
-1. Create a Sequence and add 'Get IMAP Mail Messages'. Then create email, password and mailMessages variables. Set your email and password for accessing your inbox. Set mailMessages type as List<System.Net.Mail.MailMessage>.
-
-2. Now in Properties, set the Port as 993 and Server as "imap.gmail.com". Also enter email and password into Logon section.
-
-3. Set the count of mails you want to filter in Top property. Uncheck OnlyUnreadMessages option to filter emails from already read mails.
-
-4. Now in sequence, drag ForEach activity and iterate over mailMessages list. Inside foreach, add If activity to check each mail's sender email address using mail.From.Address.Contains(""). If the condition holds true, do whatever task you wish to do. For false condition, also define a task.
+1. Create a Sequence and add 'Get IMAP Mail Messages'. Then create email, password and mailMessages variables. 
+2. Set your email and password for accessing your inbox. Set mailMessages type as List<System.Net.Mail.MailMessage>.
+3. Now in Properties, set the Port as 993 and Server as "imap.gmail.com".
+4. Also enter email and password into Logon section.
+5. Set the count of mails you want to filter in Top property.
+6. Uncheck OnlyUnreadMessages option to filter emails from already read mails.
+7. Now in sequence, drag ForEach activity and iterate over mailMessages list. Inside foreach, add If activity to check each mail's sender email address using mail.From.Address.Contains("").
+8. If the condition holds true, do whatever task you wish to do. For false condition, also define a task.
 
 ### Technical Aspect
 ### Email Automation with RPA Using UiPath
