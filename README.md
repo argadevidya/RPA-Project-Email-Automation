@@ -1,6 +1,8 @@
 # RPA-Project-Email-Automation
 Filter emails from inbox based on sender's email addresses or email subject and store emails and attachments in seperate folders according to sender.
 
+![email filteration](https://user-images.githubusercontent.com/122998236/229284386-84563b38-4261-4e22-a81b-4977a7697ae7.jpg)
+
 ### Table of Content
   * [Overview](#overview)
   * [Motivation](#motivation)
